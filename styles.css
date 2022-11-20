@@ -1,5 +1,6 @@
 :root{
     --main-font-color: #3c3b33;
+    --secondary-font-color: #544e28;
     --main-width: clamp(200px, 95%, 1400px);
 }
 
@@ -28,7 +29,7 @@ nav{
     gap: 1.5rem;
 }
 .navbar-container div{
-    color: #544e28;                                                    
+    color: var(--secondary-font-color);                                                    
 }
 .navbar-container div:hover{
     border-bottom: thin solid;
@@ -62,6 +63,7 @@ nav{
 .middle-container{
     background-color: #f4f1e7;
     font-family: 'Questrial', sans-serif;
+    color: var(--main-font-color);
     width: 100%;
     height: clamp(700px, 88vw, 1200px);
     display: flex;
@@ -121,10 +123,10 @@ h3{
     display: flex;
     flex-direction: column;
     padding: 3rem 2rem 1rem 2rem;
-
     width: var(--main-width);
     margin: 0 auto;
     font-family: 'Questrial', sans-serif;
+    color: var(--main-font-color);
 }
 
 .projects-heading{
@@ -145,13 +147,16 @@ h3{
     flex-direction: column;
     row-gap: 20px;
     width: 30%;
+    margin-bottom: 2rem;
 }
 .project-card img{
     width: 100%;
 }
 .project-card p {
-    font-size: clamp(0.5rem, 2vw, 1.5rem);;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
 }
 .project-label{
+    color: var(--secondary-font-color);    
     border-bottom: thin solid;
+    font-weight: bold;
 }
